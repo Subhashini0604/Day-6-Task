@@ -13,6 +13,7 @@ Defining a Classes:
  }
   
   Example; 
+     
       class Person {
      // code goes here
  }
@@ -23,7 +24,7 @@ Class instantiation:
 
     Let us create a dog object from our Person class.
 
-class Person {
+   class Person {
   // code goes here
 }
 const person = new Person()
@@ -34,11 +35,12 @@ Person {}
 As you can see, we have created a person object. Since the class did not have any properties yet the object is also empty.
 
 Class constructor:
-        *The constructor is a builtin function which allows as to create a blueprint for our object. The constructor function starts with a keyword constructor followed by a parenthesis. Inside the parenthesis we pass the properties of the object as parameter. We use the this keyword to attach the constructor parameters with the class.
+        
+         *The constructor is a builtin function which allows as to create a blueprint for our object. The constructor function starts with a keyword constructor followed by a parenthesis. Inside the parenthesis we pass the properties of the object as parameter. We use the this keyword to attach the constructor parameters with the class.
         *The following Person class constructor has firstName and lastName property. These properties are attached to the Person class using this keyword. This refers to the class itself.
 
 class Person {
-  constructor(firstName, lastName) {
+   constructor(firstName, lastName) {
     console.log(this) // Check the output from here
     this.firstName = firstName
     this.lastName = lastName

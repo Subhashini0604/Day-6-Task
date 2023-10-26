@@ -23,14 +23,13 @@ Class instantiation:
       *Instantiation class means creating an object from a class. We need the keyword new and we call the name of the class after the word new.
 
     Let us create a dog object from our Person class.
-
-   class Person {
-  // code goes here
+       class Person {
+      // code goes here
 }
 const person = new Person()
 console.log(person)
-
-Person {}
+ 
+ Person {}
 
 As you can see, we have created a person object. Since the class did not have any properties yet the object is also empty.
 
@@ -41,6 +40,7 @@ Class constructor:
 
 class Person {
    constructor(firstName, lastName) {
+    
     console.log(this) // Check the output from here
     this.firstName = firstName
     this.lastName = lastName
@@ -56,6 +56,7 @@ Output - Person {firstName: undefined, lastName:undefined}
    * All the keys of the object are undefined. When ever we instantiate we should pass the value of the properties. Let us pass value at this time when we instantiate the class.
 
 class Person {
+  
   constructor(firstName, lastName) {
     this.firstName = firstName
     this.lastName = lastName
@@ -71,7 +72,8 @@ Output - Person {firstName: "Asabeneh", lastName: "Yetayeh"}
    * As we have stated at the very beginning that once we create a class we can create many object using the class. Now, let us create many person objects using the Person class.
 
    class Person {
-  constructor(firstName, lastName) {
+  
+    constructor(firstName, lastName) {
     console.log(this) // Check the output from here
     this.firstName = firstName
     this.lastName = lastName
